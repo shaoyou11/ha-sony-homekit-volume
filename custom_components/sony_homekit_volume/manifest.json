@@ -1,0 +1,16 @@
+{
+  "domain": "sony_homekit_volume",
+  "name": "Sony HomeKit Volume Compatibility",
+  "version": "1.0.1",
+  "config_flow": true,
+  "dependencies": [
+    "homekit"
+  ],
+  "codeowners": [
+    "@shaoyou11"
+  ],
+  "documentation": "https://github.com/shaoyou11/ha-sony-homekit-volume",
+  "iot_class": "local_push",
+  "integration_type": "service",
+  "issue_tracker": "https://github.com/shaoyou11/ha-sony-homekit-volume/issues"
+}

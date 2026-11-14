@@ -1,7 +1,7 @@
 {
   "domain": "sony_homekit_volume",
   "name": "Sony HomeKit Volume Compatibility",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "config_flow": true,
   "dependencies": [
     "homekit"

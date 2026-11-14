@@ -6,7 +6,7 @@
 
 在 HACS / Home Assistant Marketplace 的自定义仓库中添加 `shaoyou11/ha-sony-homekit-volume`，类型选择 Integration。下载后重启 Home Assistant，在“设备与服务”中添加本集成；已有配置项会继续复用，更新不要求删除实体或重新配对。
 
-当前版本：`1.0.1`。发布版本使用 GitHub Releases，更新前请创建 Home Assistant 备份；若行为异常，可通过 Marketplace 重新下载上一个版本并重启回滚。
+当前版本：`1.0.2`。发布版本使用 GitHub Releases，更新前请创建 Home Assistant 备份；若行为异常，可通过 Marketplace 重新下载上一个版本并重启回滚。
 
 ## 使用边界
 
@@ -19,3 +19,7 @@
 每个集成独立仓库和版本，Python 文件编译检查后发布；升级不会自动同时更新其他集成。问题请提交到本仓库 Issues，日志和诊断请先移除账号、令牌、地址与位置信息。
 
 首次建立发布基线仅补充品牌资源、文档、更新元数据及持续检查，保留运行逻辑。自建辅助代码尚未宣称达到 Home Assistant 官方质量等级。
+
+### 1.0.2
+
+修复配置流程引用已移除常量导致的启动失败；改为查找明确导出 Sony 电视的现有 HomeKit 桥，保留配置身份，不修改配对或遥控代码。增加导入、已有桥识别和禁用桥回归测试。
